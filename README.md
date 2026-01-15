@@ -1,22 +1,62 @@
-# Loja Web - Estilo Shopee/Mercado Livre
+# Loja Virtual – E-commerce com Flask
 
-## Descrição
-Uma aplicação web de e-commerce simples e completa feita com Flask (Python). Inclui cadastro/login, lista de produtos, carrinho, checkout fictício e admin para gerenciar produtos. 
+Aplicação web de e-commerce desenvolvida em **Python** utilizando o framework **Flask**.
+O projeto simula uma loja virtual completa, com autenticação de usuários, carrinho de compras,
+checkout fictício e painel administrativo para gerenciamento de produtos.
 
-## Requisitos
+Projeto desenvolvido com foco em **aprendizado prático de backend web** e organização de aplicações Flask.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+- Python 3
+- Flask
+- Flask-SQLAlchemy
+- Flask-Login
+- Werkzeug
+- HTML / CSS
+- SQLite
+- Git
+
+---
+
+## ⚙️ Funcionalidades
+
+### Usuário
+- Cadastro e login de usuários
+- Listagem de produtos
+- Visualização de detalhes do produto
+- Adição e remoção de itens no carrinho
+- Simulação de checkout (finalização de compra)
+
+### Admin
+- Painel administrativo para gerenciamento de produtos
+- Adição e edição de produtos
+- Controle de acesso restrito ao administrador
+
+---
+
+## ▶️ Como executar o projeto localmente
+
+### Pré-requisitos
 - Python 3.x
-- Dependências: `pip install flask flask-sqlalchemy flask-login werkzeug`
+- Pip
 
-## Instalação e Execução
-1. Entre na pasta `loja_web`.
-2. Rode `python init_db.py` para criar o DB e adicionar produtos/admin (usuário: admin, senha: admin123).
-3. Rode `python app.py` para iniciar o servidor.
-4. Acesse `http://127.0.0.1:5000/` no navegador.
+### Passo a passo
 
-## Funcionalidades
-- **Home**: Lista de produtos com add ao carrinho.
-- **Detalhes do Produto**: Ver descrição e adicionar.
-- **Carrinho**: Ver itens, remover, total.
-- **Checkout**: Simula compra e limpa carrinho.
-- **Admin**: Adicionar/editar produtos (apenas para admin).
-- **Autenticação**: Cadastro e login seguros.
+```bash
+# Clone o repositório
+git clone https://github.com/mathcardoso876-spec/NOME-DO-REPOSITORIO.git
+
+# Acesse a pasta do projeto
+cd loja_web
+
+# Instale as dependências
+pip install flask flask-sqlalchemy flask-login werkzeug
+
+# Inicialize o banco de dados e crie usuário admin
+python init_db.py
+
+# Execute a aplicação
+python app.py
+
